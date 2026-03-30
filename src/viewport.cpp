@@ -59,7 +59,8 @@
  * This time the northern most tile on the map defines 0 and
  * everything south of that has a positive number.
  */
-
+#include "underground/underground_gui.h"
+#include "underground/underground_tunnel.h"
 #include "stdafx.h"
 #include "core/backup_type.hpp"
 #include "landscape.h"
