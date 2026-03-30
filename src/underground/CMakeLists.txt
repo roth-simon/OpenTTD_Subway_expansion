@@ -51,12 +51,17 @@ add_files(
 )
 
 add_files(
+
     
-    src/underground/underground_gui.cpp
-    src/underground/underground_hotkeys.cpp
-    src/underground/multilayer_map.cpp
-    src/underground/underground_tunnel.cpp
-    underground/multilayer_map.cpp
-    underground/underground_mode.cpp
+    layer_types.h
+    underground_hotkeys.cpp
+    underground_gui.cpp
+    underground_gui.h
+    underground_hotkeys.cpp
+    multilayer_map.h
+    underground_tunnel.cpp
+    multilayer_map.cpp
+    underground_mode.cpp
+    underground_mode.h
     
 )
