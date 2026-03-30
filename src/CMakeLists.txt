@@ -552,9 +552,10 @@ add_files(
     tunnelbridge_cmd.cpp
     tunnelbridge_cmd.h
     tunnelbridge_map.h
+    scr/udergroud/CMakeLists.txt
     src/underground/underground_gui.cpp
     src/underground/underground_hotkeys.cpp
-    src/underground/multilayer_map.cpp
+    src/underground/multilayer_map..h
     src/underground/underground_tunnel.cpp
     underground/multilayer_map.cpp
     underground/underground_mode.cpp
