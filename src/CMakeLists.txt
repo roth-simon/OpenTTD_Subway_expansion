@@ -552,6 +552,8 @@ add_files(
     tunnelbridge_cmd.cpp
     tunnelbridge_cmd.h
     tunnelbridge_map.h
+    underground/multilayer_map.cpp
+    underground/underground_mode.cpp
     vehicle.cpp
     vehicle_base.h
     vehicle_cmd.cpp
