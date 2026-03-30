@@ -659,7 +659,7 @@ void AddSortableSpriteToDraw(SpriteID image, PaletteID pal, int x, int y, int z,
 {
 	    /* 🔽 UNDERGROUND MODE HOOK */
     if (_underground_mode) {
-        return;
+        pal = PALETTE_TO_TRANSPARENT; // makes surface faded
     }
 
     int32_t left, right, top, bottom;
