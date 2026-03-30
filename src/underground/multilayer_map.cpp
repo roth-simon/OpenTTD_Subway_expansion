@@ -1,13 +1,21 @@
+#include "../stdafx.h"
 #include "multilayer_map.h"
 
-MultiLayerTile *MultiLayerMap::map = nullptr;
+#include <cstdlib>
+#include <cassert>
 
-void MultiLayerMap::Initialize(uint32 size)
+UndergroundTile *MultiLayerMap::_tiles = nullptr;
+
+void MultiLayerMap::Initialize(uint32_t map_size)
 {
-    map = new MultiLayerTile[size];
+    size_t total = (size_t)map_size * TOTAL_LAYERS;
+    _tiles = (UndergroundTile*)calloc(total, sizeof(UndergroundTile));
+    assert(_tiles != nullptr);
 }
 
-Tile &MultiLayerMap::Get(TileIndex index, UndergroundLayer layer)
+UndergroundTile &MultiLayerMap::Get(TileIndex index, UndergroundLayer layer)
 {
-    return map[index].tiles[layer];
+    assert(_tiles != nullptr);
+    size_t offset = (size_t)index * TOTAL_LAYERS + (size_t)layer;
+    return _tiles[offset];
 }
