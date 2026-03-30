@@ -6,7 +6,8 @@
  */
 
 /** @file genworld.cpp Functions to generate a map. */
-
+#include "underground/multilayer_map.h"
+#include "underground/underground_tunnel.h"
 #include "stdafx.h"
 #include "landscape.h"
 #include "company_func.h"
